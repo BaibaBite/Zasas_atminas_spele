@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style_atmina.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sēlijas atmiņas spēle</title>
+</head>
+<body>
+    <div class="wrapper">
+        <dsiv class="header">
+             <h1>
+                <a href="index.html">Sēlijas kopienu identitātes zīmes</a>
+            </h1>
+            <h2>
+                <a href="index.html">Atmiņas spēle</a>
+            </h2>
+            <ul>
+                <li><a href="spele.html">Spēle</a></li>
+                <li><a href="pspele.html">Pielāgota spēle</a></li>
+                <li><a href="top.html">Top spēlētāki</a></li>
+                <li><a href="autors.html">Par autoru</a></li>
+            </ul>
+        </div><!--Beidzas mājas lapas galvene-->
+        <div class="content">
+            <h3 class="virsraksts">Noteikumu teksts</h3>
+
+            Vārds:<input id="vards"/>
+            <br/>
+            Vecums:<input id="vecums"/>
+            <br/>
+            Reģions:
+            <select id="regions">
+                <option value="Vidzeme">Vidzeme</option>  
+                <option value="Latgale">Latgale</option>
+                <option value="Zemgale">Zemgale</option> 
+                <option value="Kurzeme">Kurzeme</option>  
+                <option value="Sēlija">Sēlija</option>   
+            </select>
+            <!-- camelcase pieraksta veids ar lielajiem burtiem pa vidu -->
+            <button onclick="saktSpeli()">Sākt spēli!</button>
+        </div><!--lapas satura beigas-->
+    </div><!--Beidzas ķermeņa bloks-->
+    <script>
